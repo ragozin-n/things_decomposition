@@ -1,6 +1,8 @@
 # things_decomposition
 coursework
+
 в аргументы передаётся число контейнеров
+
 пример coursework.py 500
 
 ## Чтиво
