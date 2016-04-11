@@ -4,7 +4,7 @@ import array
 elements = [ ]
 containers = [ ]
 
-for value in xrange(0,4):
+for value in xrange(0,10000):
     elements.append(random.random())
 elements.sort()
 
