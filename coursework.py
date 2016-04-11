@@ -10,8 +10,8 @@ elements.sort()
 
 #Write to containers
 
-for namb in containers:
-    print namb
+for value in containers:
+    print value
 
 print "---------------"
 
