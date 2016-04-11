@@ -1,4 +1,10 @@
 import random
+import argparse
+
+parser = argparse.ArgumentParser(description='coursework')
+parser.add_argument("containers_count", type=int,
+                    help="the number of containers")
+args = parser.parse_args()
 
 elements = []
 containers = [0]
@@ -13,4 +19,7 @@ for value in elements:
     else:
         containers.append(value)
 
-print(str(len(containers)) + " containers need")
+if len(containers) > args.containers_count:
+    print("not enough containers")
+else:
+    print(str(len(containers)) + " containers need")
