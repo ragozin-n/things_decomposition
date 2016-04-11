@@ -11,9 +11,9 @@ elements.sort()
 #Write to containers
 
 for value in containers:
-    print value
+    print(value)
 
-print "---------------"
+print("---------------")
 
 for value in elements:
-    print value
+    print(value)
