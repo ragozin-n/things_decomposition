@@ -1,14 +1,13 @@
 import random
-import array
 
-elements = [ ]
-containers = [ ]
+elements = []
+containers = []
 
-for value in xrange(0,10000):
+for value in range(0, 10000):
     elements.append(random.random())
 elements.sort()
 
-#Write to containers
+# Write to containers
 
 for value in containers:
     print(value)
