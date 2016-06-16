@@ -1,0 +1,6 @@
+D:\project\AKI\C#\things_decomposition\CourseWork\CourseWork\bin\Debug\CourseWork.exe.config
+D:\project\AKI\C#\things_decomposition\CourseWork\CourseWork\bin\Debug\CourseWork.exe
+D:\project\AKI\C#\things_decomposition\CourseWork\CourseWork\bin\Debug\CourseWork.pdb
+D:\project\AKI\C#\things_decomposition\CourseWork\CourseWork\obj\Debug\CourseWork.csprojResolveAssemblyReference.cache
+D:\project\AKI\C#\things_decomposition\CourseWork\CourseWork\obj\Debug\CourseWork.exe
+D:\project\AKI\C#\things_decomposition\CourseWork\CourseWork\obj\Debug\CourseWork.pdb
