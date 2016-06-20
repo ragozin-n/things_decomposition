@@ -45,7 +45,7 @@ namespace CourseWork
                     containers.Add(element);
                 }
             }
-            Console.WriteLine(containers.Count <= containersCount ? containers.Count.ToString() : "Недостаточно контейнеров");
+            Console.WriteLine(containers.Count <= containersCount ? $"Нам потребуется {containers.Count.ToString()} контейнеров" : "Недостаточно контейнеров");
             Console.ReadKey();
         }
     }
