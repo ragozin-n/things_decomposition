@@ -8,27 +8,33 @@ namespace CourseWork
     {
         private static void Main(string[] args)
         {
-            var containersCount = 0;
-            Console.WriteLine("Введите кол-во контейнеров");
-            try
+            int containersCount, elementsCount;
+            string userInput;
+            List<double> containers = new List<double>();
+            List<double> elements = new List<double>();
+
+            do
             {
-                containersCount = int.Parse(Console.ReadLine());
-            }
-            catch (Exception)
+                Console.Write("Введите кол-во контейнеров: ");
+                userInput = Console.ReadLine();
+            } while (!int.TryParse(userInput, out containersCount));
+
+            do
             {
-                Console.WriteLine("Неверно задано число");
-                containersCount = int.Parse(Console.ReadLine());
-            }
-            var elements = new List<double>();
-            var containers = new List<double>();
-            var rnd = new Random();
-            for (var i = 0; i < 10000; i++)
+                Console.Write("Введите кол-во элементов: ");
+                userInput = Console.ReadLine();
+            } while (!int.TryParse(userInput, out elementsCount));
+
+            //Генерируем elementsCount случайных элементов
+            for (var i = 0; i < elementsCount; i++)
             {
-                elements.Add(rnd.NextDouble());
+                elements.Add(new Random().NextDouble());
             }
+
             foreach (var element in elements)
             {
-                 var max = containers.FindAll(m => m + element <= 1).ToArray();
+                //Допустимые контейнеры для element (в которые он влезет)
+                double[] max = containers.FindAll(m => m + element <= 1).ToArray();
 
                 if (max.Length > 0)
                 {
@@ -40,6 +46,7 @@ namespace CourseWork
                 }
             }
             Console.WriteLine(containers.Count <= containersCount ? containers.Count.ToString() : "Недостаточно контейнеров");
+            Console.ReadKey();
         }
     }
 }
